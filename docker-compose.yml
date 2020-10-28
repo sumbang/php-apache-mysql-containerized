@@ -23,6 +23,7 @@ services:
       - backend
     ports:
       - "81:80"
+      - "82:443"
     volumes:
       - ${PROJECT_ROOT}/:/var/www/html/:cached
     container_name: apache
